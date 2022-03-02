@@ -69,6 +69,7 @@ hashicorp/cdktf-provider-tfe
 hashicorp/cdktf-provider-tls
 hashicorp/cdktf-repository-manager
 hashicorp/learn-cdktf-assets-stacks-lambda
+hashicorp/terraform-cdk
 iAlan02/hello-cdktf
 jamiepmullan/static-site-cdktf
 jeromedecoster/cdktf-lambda-dynamodb

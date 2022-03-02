@@ -44,8 +44,9 @@
 
 #### p6df-cdktf/init.zsh:
 
-- p6df::modules::cfktf::deps()
-- p6df::modules::cfktf::langs()
+- p6df::modules::cdktf::clones()
+- p6df::modules::cdktf::deps()
+- p6df::modules::cdktf::langs()
 
 
 
