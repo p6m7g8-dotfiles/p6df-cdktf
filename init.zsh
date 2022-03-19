@@ -36,5 +36,5 @@ p6df::modules::cdktf::langs() {
 ######################################################################
 p6df::modules::cdktf::clones() {
 
-  p6_run_parallel "0" "4" "$(cat $P6_DFZ_SRC_P6M7G8_DIR/p6df-cdktf/conf/cdktf)" "p6_github_util_repo_clone_or_pull_no_ou" "$P6_DFZ_SRC_FOCUSED_DIR"
+  p6_run_parallel "0" "4" "$(cat $P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-cdktf/conf/cdktf)" "p6_github_util_repo_clone_or_pull_no_ou" "$P6_DFZ_SRC_FOCUSED_DIR"
 }
