@@ -28,10 +28,24 @@ p6df::modules::cdktf::langs() {
 ######################################################################
 #<
 #
+# Function: p6df::modules::cdktf::home::symlink()
+#
+#  Depends:	 p6_file p6_run
+#  Environment:	 P6_DFZ_SRC_P6M7G8_DOTFILES_DIR
+#>
+######################################################################
+p6df::modules::cdktf::home::symlink() {
+
+  p6_file_symlink "$P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-cdktf/share/.cdktf" ".cdktf"
+}
+
+######################################################################
+#<
+#
 # Function: p6df::modules::cdktf::clones()
 #
 #  Depends:	 p6_run
-#  Environment:	 P6_DFZ_SRC_P6M7G8_DIR
+#  Environment:	 P6_DFZ_SRC_P6M7G8_DOTFILES_DIR
 #>
 ######################################################################
 p6df::modules::cdktf::clones() {

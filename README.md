@@ -46,6 +46,7 @@
 
 - p6df::modules::cdktf::clones()
 - p6df::modules::cdktf::deps()
+- p6df::modules::cdktf::home::symlink()
 - p6df::modules::cdktf::langs()
 
 
