@@ -7,7 +7,6 @@
 ######################################################################
 p6df::modules::cdktf::deps() {
   ModuleDeps=(
-    p6m7g8-dotfiles/p6df-awscdk
     p6m7g8-dotfiles/p6df-terraform
     hashicorp/terraform-cdk
   )
