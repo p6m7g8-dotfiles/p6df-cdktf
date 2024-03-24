@@ -52,7 +52,7 @@ p6df::modules::cdktf::home::symlink() {
 ######################################################################
 p6df::modules::cdktf::clones() {
 
-  p6_run_parallel "0" "4" "$(cat $P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-cdktf/conf/cdktf)" "p6_github_util_clone" "$P6_DFZ_SRC_FOCUSED_DIR"
+  p6_run_parallel "0" "4" "$(cat $P6_DFZ_SRC_P6M7G8_DOTFILES_DIR/p6df-cdktf/conf/cdktf)" "p6_github_cli_clone" "$P6_DFZ_SRC_FOCUSED_DIR"
 
   p6_return_void
 }
