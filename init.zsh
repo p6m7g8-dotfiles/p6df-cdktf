@@ -56,3 +56,26 @@ p6df::modules::cdktf::clones() {
 
   p6_return_void
 }
+
+######################################################################
+#<
+#
+# Function: str str = p6df::modules::cdktf::prompt::line()
+#
+#  Returns:
+#	str - str
+#
+#  Environment:	 TERRAFORM_BINARY_NAME
+#>
+######################################################################
+p6df::modules::cdktf::prompt::line() {
+
+    local str
+    if p6_file_exists "cdktf.json"; then
+      local ver=$(p6_terraform_version)
+      local workspace=$(p6df::modules::terraform::cli::workspace::show)
+      local tfvar_file=$(p6df::modules::terraform::util::tfvar::file)
+      str="cdktf:\t\t  bin=[$TERRAFORM_BINARY_NAME] $ver $workspace | $tfvar_file"
+    fi
+    p6_return_str "$str"
+}
